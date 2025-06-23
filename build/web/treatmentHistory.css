@@ -1,0 +1,115 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 15 Jun 2025, 9:30:03 pm
+    Author     : Azwan
+*/
+
+/* Treatment History Table - Matching Appointments Style */
+.treatment-history .section-heading {
+    color: #00a896;
+    text-align: left;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.treatment-history .table-container {
+    overflow-x: auto;
+    margin: 2rem 0;
+    border-radius: 0;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    background-color: #ffffff;
+    width: 100%;
+    border: none;
+}
+
+.treatment-history table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background-color: #ffffff;
+}
+
+.treatment-history th, 
+.treatment-history td {
+    padding: 1rem 1.2rem;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+    color: #333333;
+}
+
+.treatment-history th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+    color: #555555;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    letter-spacing: 0.05em;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.treatment-history tr:last-child td {
+    border-bottom: none;
+}
+
+.treatment-history tbody tr:hover {
+    background-color: #f0f2f5;
+}
+
+/* Button styles to match */
+.treatment-history .action-buttons {
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.treatment-history .add-new-button {
+    background-color: #28a745;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border: none;
+    cursor: pointer;
+}
+
+.treatment-history .add-new-button:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.treatment-history .back-button {
+    background-color: #6c757d;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border: none;
+    cursor: pointer;
+}
+
+.treatment-history .back-button:hover {
+    background-color: #5a6268;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}

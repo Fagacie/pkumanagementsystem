@@ -1,0 +1,99 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 16 Jun 2025, 1:43:23 am
+    Author     : Azwan
+*/
+/* Error Panel Styles */
+.error-panel {
+    background-color: #ffffff;
+    padding: 3rem;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 600px;
+    margin: 2rem auto;
+    text-align: center;
+    border-top: 5px solid #dc3545;
+}
+
+.error-icon {
+    font-size: 5rem;
+    color: #dc3545;
+    margin-bottom: 1.5rem;
+}
+
+.error-heading {
+    color: #dc3545;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.error-message {
+    color: #333333;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    font-weight: 500;
+}
+
+.error-details {
+    color: #6c757d;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+.error-actions {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.error-button {
+    background-color: #dc3545;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.error-button.secondary {
+    background-color: #6c757d;
+}
+
+.error-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0.9;
+}
+
+.error-button i {
+    font-size: 0.9rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .error-panel {
+        padding: 2rem 1.5rem;
+    }
+    
+    .error-actions {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+    
+    .error-button {
+        width: 100%;
+        justify-content: center;
+    }
+}

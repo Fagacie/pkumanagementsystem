@@ -1,0 +1,92 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 16 Jun 2025, 1:11:36 am
+    Author     : Azwan
+*/
+
+/* Success Panel Styles */
+.success-panel {
+    background-color: #ffffff;
+    padding: 3rem;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 600px;
+    margin: 2rem auto;
+    text-align: center;
+    border-top: 5px solid #28a745;
+}
+
+.success-icon {
+    font-size: 5rem;
+    color: #00a896;
+    margin-bottom: 1.5rem;
+}
+
+.success-heading {
+    color: #00a896;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.success-message {
+    color: #00a896;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.success-actions {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.success-button {
+    background-color: #00a896;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.success-button.secondary {
+    background-color: #6c757d;
+}
+
+.success-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.success-button i {
+    font-size: 0.9rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .success-panel {
+        padding: 2rem 1.5rem;
+    }
+    
+    .success-actions {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+    
+    .success-button {
+        width: 100%;
+        justify-content: center;
+    }
+}

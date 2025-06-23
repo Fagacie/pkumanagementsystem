@@ -1,0 +1,213 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Jun 12, 2025, 2:32:41 PM
+    Author     : Abbas
+*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f0f2f5;
+    color: #333333;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.split-login-wrapper {
+    display: flex;
+    width: 80%;
+    max-width: 800px;
+    min-height: 500px;
+    background-color: #ffffff;
+    border-radius: 0;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    margin: auto;
+}
+
+.login-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5rem;
+    position: relative;
+    background-color: #ffffff;
+    z-index: 2;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 360px;
+    text-align: center;
+}
+
+.login-container h2 {
+    color: #00a896; /* New Teal Accent */
+    margin-bottom: 1.8rem;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.form-group {
+    margin-bottom: 1.2rem;
+    text-align: left;
+}
+
+.form-label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 0.6rem;
+    color: #555555;
+    font-size: 0.95rem;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 0.7rem 1rem;
+    border: 1px solid #cccccc;
+    border-radius: 0;
+    background-color: #f8f9fa;
+    color: #333333;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.05);
+    transition: border-color 0.2s, box-shadow 0.2s, background-color 0.2s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #00a896; /* New Teal Accent */
+    box-shadow: 0 0 0 3px rgba(0, 168, 150, 0.2); /* New Teal Accent */
+    outline: none;
+    background-color: #e2e8f0;
+}
+
+.submit-button {
+    background-color: #00a896; /* New Teal Accent */
+    color: white;
+    padding: 0.9rem 1.8rem;
+    border-radius: 0;
+    transition: background-color 0.3s, transform 0.2s;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    width: 100%;
+    margin-top: 1.8rem;
+    font-size: 1rem;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.08);
+}
+
+.submit-button:hover {
+    background-color: #007c6f; 
+    transform: translateY(-1px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.error-message {
+    display: block;
+    margin-top: 1.2rem;
+    color: #721c24;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    padding: 0.6rem;
+    border-radius: 0;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.login-right {
+    flex: 1;
+    background: #e9ecef;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0;
+    border-left: 1px solid #e0e0e0;
+}
+
+.login-right::before,
+.login-right::after {
+    content: none;
+}
+
+.design-text {
+    z-index: 2;
+    color: #555555;
+    text-align: center;
+    padding: 2rem;
+}
+
+.design-text h3 {
+    font-size: 2.5rem;
+    margin-bottom: 0.8rem;
+    font-weight: 700;
+    line-height: 1.2;
+    text-shadow: none;
+    color: #00a896; /* New Teal Accent */
+}
+
+.design-text p {
+    font-size: 1.1rem;
+    line-height: 1.4;
+    opacity: 0.9;
+    max-width: 300px;
+}
+
+@media (max-width: 1024px) {
+    .split-login-wrapper {
+        width: 90%;
+        min-height: 450px;
+        max-width: 700px;
+    }
+    .design-text h3 {
+        font-size: 2rem;
+    }
+    .design-text p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .split-login-wrapper {
+        flex-direction: column;
+        width: 95%;
+        max-width: 400px;
+        min-height: auto;
+        border-radius: 0;
+    }
+    .login-left {
+        border-radius: 0;
+        padding: 1.2rem;
+    }
+    .login-right {
+        min-height: 150px;
+        border-radius: 0;
+        padding: 1.2rem;
+        border-top: 1px solid #e0e0e0;
+        border-left: none;
+    }
+    .login-container h2 {
+        font-size: 1.8rem;
+    }
+    .design-text h3 {
+        font-size: 1.8rem;
+    }
+    .design-text p {
+        font-size: 0.85rem;
+    }
+}
+
+
+

@@ -1,0 +1,93 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 15 Jun 2025, 10:17:19 pm
+    Author     : Azwan
+*/
+
+/* Doctor Availability Table - Matching Patient Records Style */
+.doctor-availability .section-heading {
+    color: #00a896;
+    text-align: left;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.doctor-availability .table-container {
+    overflow-x: auto;
+    margin: 2rem 0;
+    border-radius: 0;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    background-color: #ffffff;
+    width: 100%;
+    border: none;
+}
+
+.doctor-availability table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background-color: #ffffff;
+}
+
+.doctor-availability th, 
+.doctor-availability td {
+    padding: 1rem 1.2rem;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+    color: #333333;
+}
+
+.doctor-availability th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+    color: #555555;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    letter-spacing: 0.05em;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.doctor-availability tr:last-child td {
+    border-bottom: none;
+}
+
+.doctor-availability tbody tr:hover {
+    background-color: #f0f2f5;
+}
+
+/* Status indicator */
+.doctor-availability .status-available {
+    color: #28a745;
+    font-weight: 500;
+}
+
+.doctor-availability .status-busy {
+    color: #dc3545;
+    font-weight: 500;
+}
+
+/* Action button specific styles */
+.doctor-availability .action-button {
+    padding: 0.5rem 0.8rem;
+    border-radius: 0;
+    font-weight: 500;
+    transition: all 0.3s;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.doctor-availability .action-button i {
+    font-size: 0.8rem;
+}

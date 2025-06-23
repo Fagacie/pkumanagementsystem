@@ -1,0 +1,337 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Jun 12, 2025, 3:42:52 PM
+    Author     : Abbas Usman
+*/
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f0f2f5;
+    color: #333333;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.main-form-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 1rem;
+    flex-grow: 1;
+    background-color: #f0f2f5;
+    min-height: 100%;
+    overflow-y: hidden;
+    box-sizing: border-box;
+}
+
+.form-container {
+    background-color: #ffffff;
+    padding: 2rem 4rem;
+    border-radius: 0;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: left;
+    border-top: 5px solid #00a896;
+    box-sizing: border-box;
+}
+
+.form-container h2, .profile-form h2 {
+    color: #00a896;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.form-group {
+    margin-bottom: 0.8rem;
+    text-align: left;
+}
+
+.form-label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 0.4rem;
+    color: #555555;
+    font-size: 0.9rem;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"],
+input[type="date"],
+input[type="email"],
+input[type="tel"] {
+    width: 100%;
+    padding: 0.6rem 0.9rem;
+    border: 1px solid #cccccc;
+    border-radius: 0;
+    background-color: #f8f9fa;
+    color: #333333;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
+    transition: border-color 0.2s, box-shadow 0.2s, background-color 0.2s;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus {
+    border-color: #00a896;
+    box-shadow: 0 0 0 4px rgba(0, 168, 150, 0.25), inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    outline: none;
+    background-color: #e2e8f0;
+}
+
+.readonly-input {
+    background-color: #e9ecef;
+    color: #777777;
+    cursor: not-allowed;
+    border-color: #e0e0e0;
+}
+
+.readonly-input:focus {
+    box-shadow: none;
+    border-color: #e0e0e0;
+    background-color: #e9ecef;
+}
+
+.form-actions {
+    margin-top: 1.5rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 0.8rem;
+}
+
+.form-actions .submit-button {
+    background-color: #00a896;
+    color: white;
+    padding: 0.7rem 1.8rem;
+    border-radius: 0;
+    transition: background-color 0.3s, transform 0.2s;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    min-width: 140px;
+    font-size: 0.95rem;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-actions .submit-button:hover {
+    background-color: #007c6f;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+.delete-account-section {
+    margin-top: 2.5rem;
+    padding-top: 1.8rem;
+    border-top: 3px dashed #e0e0e0;
+    text-align: center;
+}
+
+.delete-account-section .delete-button {
+    background-color: #dc3545;
+    color: white;
+    padding: 0.8rem 1.8rem;
+    border-radius: 0;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s ease;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    min-width: 200px;
+    font-size: 1rem;
+}
+.delete-account-section .delete-button:hover {
+    background-color: #c82333;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.message {
+    display: block;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    border-radius: 0;
+    font-weight: 500;
+    text-align: center;
+    font-size: 0.85rem;
+}
+
+.success-message {
+    color: #155724;
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+}
+
+.error-message {
+    color: #721c24;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+}
+
+.modal-content {
+    background-color: #ffffff;
+    margin: auto;
+    padding: 2.5rem;
+    border-radius: 0;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+    text-align: center;
+    border-top: 5px solid #00a896;
+}
+
+.modal-content h3 {
+    color: #00a896;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.modal-content p {
+    color: #333333;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
+.close-button {
+    color: #777777;
+    font-size: 2rem;
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: #dc3545;
+    text-decoration: none;
+}
+
+.modal-actions {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.modal-actions .action-button {
+    min-width: 120px;
+    padding: 0.8rem 1.2rem;
+    font-size: 1rem;
+}
+
+.secondary-button {
+    background-color: #6c757d;
+}
+.secondary-button:hover {
+    background-color: #5a6268;
+}
+
+@media (max-width: 1200px) {
+    .form-container {
+        padding: 1.5rem 3.5rem;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 992px) {
+    .form-container {
+        padding: 1.5rem 2.5rem;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-form-wrapper {
+        padding: 1.5rem 0.5rem;
+        align-items: flex-start;
+        overflow-y: auto;
+    }
+    .form-container {
+        padding: 1.2rem;
+        max-width: 98%;
+    }
+    .form-container h2 {
+        font-size: 1.6rem;
+        margin-bottom: 1.2rem;
+    }
+    .form-group {
+        margin-bottom: 0.8rem;
+    }
+    .form-label {
+        font-size: 0.85rem;
+        margin-bottom: 0.4rem;
+    }
+    input[type="text"],
+    input[type="password"],
+    input[type="number"],
+    input[type="date"],
+    input[type="email"],
+    input[type="tel"],
+    .form-select {
+        padding: 0.5rem 0.8rem;
+        font-size: 0.85rem;
+    }
+    .form-actions {
+        flex-direction: column;
+        gap: 0.6rem;
+        margin-top: 1.2rem;
+    }
+    .form-actions .submit-button,
+    .form-actions .secondary-button {
+        min-width: 100%;
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+    }
+    .message {
+        margin-top: 0.8rem;
+        padding: 0.5rem;
+        font-size: 0.8rem;
+    }
+    .modal-content {
+        padding: 1.5rem;
+    }
+    .modal-content h3 {
+        font-size: 1.5rem;
+    }
+    .modal-content p {
+        font-size: 1rem;
+    }
+    .modal-actions .action-button {
+        min-width: 100%;
+        padding: 0.8rem 1.2rem;
+        font-size: 0.9rem;
+    }
+}
+

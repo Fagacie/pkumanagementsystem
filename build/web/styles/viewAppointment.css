@@ -1,0 +1,108 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 16 Jun 2025, 12:34:56 am
+    Author     : Azwan
+*/
+
+/* Doctor Appointments Table */
+.doctor-appointments .section-heading {
+    color: #00a896;
+    text-align: left;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.doctor-appointments .table-container {
+    overflow-x: auto;
+    margin: 2rem 0;
+    border-radius: 0;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    background-color: #ffffff;
+    width: 100%;
+    border: none;
+}
+
+.doctor-appointments .data-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.doctor-appointments th, 
+.doctor-appointments td {
+    padding: 1rem 1.2rem;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+    color: #333333;
+}
+
+.doctor-appointments th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+    color: #555555;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    letter-spacing: 0.05em;
+}
+
+.doctor-appointments tr:last-child td {
+    border-bottom: none;
+}
+
+.doctor-appointments tbody tr:hover {
+    background-color: #f0f2f5;
+}
+
+/* Form buttons styling */
+.doctor-appointments .inline-form {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+.doctor-appointments .actions-column {
+    white-space: nowrap;
+}
+
+.doctor-appointments .action-button {
+    padding: 0.5rem 1rem;
+    border-radius: 0;
+    font-weight: 500;
+    transition: all 0.3s;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    border: none;
+    text-decoration: none;
+}
+
+.doctor-appointments .action-button i {
+    font-size: 0.8rem;
+}
+
+/* Specific button colors */
+.doctor-appointments .edit-button {
+    background-color: #00a896;
+    color: white;
+}
+
+.doctor-appointments .secondary-button {
+    background-color: #6c757d;
+    color: white;
+}
+
+.doctor-appointments .edit-button:hover {
+    background-color: #00897b;
+}
+
+.doctor-appointments .secondary-button:hover {
+    background-color: #5a6268;
+}

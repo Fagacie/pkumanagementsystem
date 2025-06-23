@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pusat Kesihatan Universiti</title>
+    <link rel="stylesheet" href="styles/welcome.css">
+
+    <style>
+        footer {
+            width: 100%;
+            padding-top: 1.5rem;
+            background-color: #f0f2f5; 
+            color: #333333;
+            text-align: center;
+            box-sizing: border-box;
+             margin-top: auto; 
+            border-top: 1px solid #e0e0e0; 
+        }
+
+        footer hr {
+            border: none;
+            border-top: 1px solid #e0e0e0;
+            margin: 1.5rem auto;
+            width: 90%;
+            max-width: 1200px;
+        }
+
+        footer p {
+            margin: 0;
+            padding: 0 1rem 1.5rem; 
+            font-size: 0.9rem;
+            color: #777777;
+            text-align: center; 
+        }
+
+        
+        @media (max-width: 768px) {
+            footer {
+                padding-top: 1rem;
+            }
+            footer hr {
+                margin: 1rem auto;
+                width: 95%;
+            }
+            footer p {
+                font-size: 0.8rem;
+                padding: 0 0.5rem 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdkF0KVXVPQ2D5cb32TCBvuqq4SUyr9_vbNw&s" 
+             alt="UMT LOGO" class="header-img">
+        <h1 class="hospital-name">Pusat Kesihatan Universiti</h1>
+        <p class="subtitle">Welcome to Pusat Kesihatan Universiti</p>
+    </header>
+    <main>
+        <div class="welcome-card">
+            <h2>Welcome!</h2>
+            <p>Please log in to access your personalized dashboard.</p>
+            <a href="login.jsp"><button class="login-btn">Login</button></a>
+        </div>
+        <section class="info-section">
+            <div class="services">
+                <h3>What We Do</h3>
+                <ul>
+                    <li>General Outpatient Services</li>
+                    <li>Student & Staff Medical Care</li>
+                    <li>Vaccinations & Immunizations</li>
+                    <li>Laboratory & Diagnostic Services</li>
+                    <li>Health Education & Promotion</li>
+                    <li>Emergency Medical Assistance</li>
+                </ul>
+            </div>
+            <div class="working-hours">
+                <h3>Working Hours</h3>
+                <table>
+                    <tr><td>Sunday - Thursday</td><td>8:00 AM - 5:00 PM</td></tr>
+                    <tr><td>Friday</td><td>8:00 AM - 1:00 PM</td></tr>
+                    <tr><td>Public Holidays</td><td>Closed</td></tr>
+                </table>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <hr>
+        <p>&copy; 2025 - Pusat Kesihatan Universiti. All rights reserved.</p>
+    </footer>
+</body>
+</html>
